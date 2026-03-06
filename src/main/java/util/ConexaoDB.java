@@ -6,20 +6,14 @@ import java.sql.SQLException;
 
 public class ConexaoDB {
 	
-	private static final String URL = "jdbc:postgresql://localhost:5432/gestaoDespesas";
-	private static final String USUARIO = "postgres";
-	private static final String SENHA = "root";
+	private static final String URL = "jdbc:postgresql://ep-twilight-moon-acwrtu3o-pooler.sa-east-1.aws.neon.tech/aulas";
+	private static final String USUARIO = "senaipato";
+	private static final String SENHA = "SenaiPatoBranco";
 	
-	public static Connection getConexao() {
-		try {
-			Connection conexao = DriverManager.getConnection(URL, USUARIO, SENHA);
-			System.out.println("Conexão deu boa");
-			return conexao;
-		} catch (SQLException r) {
-			System.err.println("Não deu boa");
-			System.err.println("Ó: " + r.getMessage());
-			return null;
-		}
+	public static Connection getConexao() throws SQLException {
+		Connection conexao = DriverManager.getConnection(URL, USUARIO, SENHA);
+		System.out.println("Conexão deu boa");
+		return conexao;
 	}
 	
 	public static void fecharConexao(Connection conexao) {
