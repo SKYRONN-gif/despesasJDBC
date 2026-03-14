@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConexaoDB {
 	
-	private static final String URL = "jdbc:postgresql://ep-twilight-moon-acwrtu3o-pooler.sa-east-1.aws.neon.tech/aulas";
+	private static final String URL = "jdbc:postgresql://ep-twilight-moon-acwrtu3o-pooler.sa-east-1.aws.neon.tech/despesas";
 	private static final String USUARIO = "senaipato";
 	private static final String SENHA = "SenaiPatoBranco";
 	private static int contador = 0;
