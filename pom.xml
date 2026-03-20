@@ -4,7 +4,7 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>carlos</groupId>
+  <groupId>nahan</groupId>
   <artifactId>despesas</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
@@ -59,7 +59,7 @@
   </dependencies>
 
   <build>
-    <finalName>despesasCarlos</finalName>
+    <finalName>despesas</finalName>
     <plugins>
       <!-- WAR plugin -->
       <plugin>
